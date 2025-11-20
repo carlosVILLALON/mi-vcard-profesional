@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta Digital - Carlos José Villalón Muriel</title>
+    <!-- Incluir Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración para usar la fuente Inter y los colores adaptados del logo --><script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#0F4C5C', // Color azul oscuro del logo
+                        'secondary': '#227C9D', // Color turquesa del logo
+                        'text-dark': '#374151', // Un gris oscuro para el texto general
+                        'text-light': '#6B7280', // Un gris más claro
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Estilos personalizados para efectos visuales y la fuente --><style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        
+        /* Efecto al pasar el mouse por los enlaces */
+        .contact-link:hover .icon {
+            transform: scale(1.1);
+            color: #227C9D; /* secondary hover */
+        }
+        .contact-link:hover .text {
+            color: #0F4C5C; /* primary hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen p-4 font-sans">
+
+    <!-- Contenedor Principal de la Tarjeta (Centrado y con sombra) --><div class="w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:scale-[1.02] transition duration-500 ease-in-out border-t-4 border-primary">
+        
+        <!-- Sección de Encabezado y Logo --><div class="p-6 md:p-8 text-center bg-white">
+            
+            <!-- Logo de la Empresa --><img class="w-32 h-32 rounded-full mx-auto object-contain border-4 border-white shadow-lg -mt-10 bg-white p-2" 
+                 src="https://i.imgur.com/g8e1y5z.png" 
+                 alt="Logo Villalón Auditores">
+
+            <!-- Nombre y Título --><h1 class="text-3xl font-bold text-text-dark mt-4">Carlos José Villalón Muriel</h1>
+            <p class="text-xl text-secondary font-semibold mt-1">Auditor | Villalón Auditores</p>
+            <p class="text-sm text-text-light mt-2">Expertos en auditoría y consultoría financiera.</p>
+        </div>
+
+        <!-- Detalles de Contacto --><div class="px-6 md:px-8 py-6 bg-gray-50 border-t border-gray-200">
+            <h2 class="text-lg font-bold text-primary mb-4 border-b pb-2">Información de Contacto</h2>
+
+            <ul class="space-y-4">
+                <!-- Teléfono (WhatsApp) --><li class="flex items-start">
+                    <a href="https://wa.me/34658201488" target="_blank" class="contact-link flex items-center w-full transition duration-300">
+                        <!-- Icono de Teléfono/WhatsApp (usando SVG simple) --><div class="icon text-primary flex-shrink-0 mr-4 transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div class="text">
+                            <span class="block text-gray-800 font-medium">Teléfono (WhatsApp)</span>
+                            <span class="block text-text-light text-sm transition duration-300">+34 658 201 488</span>
+                        </div>
+                    </a>
+                </li>
+                
+                <!-- Correo Electrónico --><li class="flex items-start">
+                    <a href="mailto:carlos@villalonauditores.com" class="contact-link flex items-center w-full transition duration-300">
+                        <div class="icon text-primary flex-shrink-0 mr-4 transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <div class="text">
+                            <span class="block text-gray-800 font-medium">Email</span>
+                            <span class="block text-text-light text-sm transition duration-300">carlos@villalonauditores.com</span>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Sitio Web / Portafolio --><li class="flex items-start">
+                    <a href="https://www.villalonauditores.com" target="_blank" class="contact-link flex items-center w-full transition duration-300">
+                        <div class="icon text-primary flex-shrink-0 mr-4 transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                        </div>
+                        <div class="text">
+                            <span class="block text-gray-800 font-medium">Web</span>
+                            <span class="block text-text-light text-sm transition duration-300">www.villalonauditores.com</span>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Ubicación (opcional, si deseas añadirla) --><!-- 
+                <li class="flex items-start">
+                    <div class="flex items-center w-full">
+                        <div class="text-gray-400 flex-shrink-0 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="block text-gray-800 font-medium">Ubicación</span>
+                            <span class="block text-text-light text-sm">Sevilla, España</span>
+                        </div>
+                    </div>
+                </li>
+                --></ul>
+        </div>
+
+        <!-- Botón de Acción Principal (Guardar Contacto) --><div class="p-6 md:p-8 pt-0">
+            <button id="save-vcard-btn" class="w-full bg-primary hover:bg-secondary text-white font-bold py-3 px-4 rounded-xl transition duration-300 shadow-lg shadow-primary/50 transform hover:-translate-y-0.5">
+                Guardar Contacto (vCard)
+            </button>
+        </div>
+
+    </div>
+
+    <script>
+        // --- Lógica JavaScript para generar y descargar el vCard ---
+
+        document.getElementById('save-vcard-btn').addEventListener('click', function() {
+            // 1. Datos de Contacto
+            const name = "Carlos José Villalón Muriel";
+            const title = "Auditor | Villalón Auditores";
+            const phone = "658201488"; // Sin espacios para el vCard
+            const email = "carlos@villalonauditores.com";
+            const url = "https://www.villalonauditores.com";
+            // const address = "Sevilla, España"; // Descomentar si usas la ubicación
+
+            // 2. Construir el contenido del archivo VCF (vCard 3.0)
+            const vcardContent = `BEGIN:VCARD
+VERSION:3.0
+N:${name.split(' ')[name.split(' ').length - 1]};${name.split(' ').slice(0, name.split(' ').length - 1).join(' ')}
+FN:${name}
+ORG:Villalón Auditores
+TITLE:${title}
+TEL;TYPE=CELL:${phone}
+EMAIL;TYPE=INTERNET:${email}
+URL:${url}
+${/* Descomentar si usas la ubicación: `ADR;TYPE=WORK:;;${address}` */''}
+END:VCARD`;
+
+            // 3. Crear un Blob (archivo) con el contenido
+            const blob = new Blob([vcardContent], { type: 'text/vcard;charset=utf-8' });
+
+            // 4. Crear un enlace de descarga
+            const url_object = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url_object;
+            a.download = 'Carlos_Villalon_vCard.vcf';
+
+            // 5. Simular un clic para iniciar la descarga
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+
+            // Liberar la URL del objeto
+            URL.revokeObjectURL(url_object);
+
+            console.log('Descarga de vCard iniciada para Carlos José Villalón Muriel.');
+        });
+    </script>
+</body>
+</html>
