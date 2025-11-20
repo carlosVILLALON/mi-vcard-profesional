@@ -46,19 +46,19 @@
         <!-- Sección de Encabezado y Foto -->
         <div class="p-6 md:p-8 text-center bg-white">
             
-            <!-- Logo de Villalón Auditores usando la imagen subida. -->
+            <!-- IMAGEN: Apunta al archivo local logo.jpg -->
             <img class="w-32 h-32 rounded-full mx-auto object-contain border-4 border-white shadow-lg -mt-10 bg-white p-2" 
-                 src="uploaded:Gemini_Generated_Image_tzau5ytzau5ytzau.jpg-5f9c522d-0726-4633-99c2-51354eb423b5" 
+                 src="logo.jpg" 
                  alt="Logo Villalón Auditores"
                  onerror="this.onerror=null; this.src='https://placehold.co/128x128/0F4C5C/ffffff?text=VA';">
 
             <!-- Nombre y Título -->
             <h1 class="text-3xl font-bold text-text-dark mt-4">Carlos José Villalón Muriel</h1>
             
-            <!-- Título de la Empresa: Corregido -->
+            <!-- Título de la Empresa -->
             <p class="text-xl text-secondary font-semibold mt-1">Villalón Auditores</p>
             
-            <!-- Descripción: Corregida -->
+            <!-- Descripción -->
             <p class="text-sm text-text-light mt-2">Despacho de auditoría de cuentas</p>
         </div>
 
@@ -117,7 +117,7 @@
 
         <!-- Botón de Acción Principal (Guardar Contacto) -->
         <div class="p-6 md:p-8 pt-0">
-            <!-- Botón de Guardar Contacto (Texto corregido) -->
+            <!-- Botón de Guardar Contacto -->
             <button id="save-vcard-btn" class="w-full bg-primary hover:bg-secondary text-white font-bold py-3 px-4 rounded-xl transition duration-300 shadow-lg shadow-primary/50 transform hover:-translate-y-0.5">
                 Guardar Contacto
             </button>
@@ -131,9 +131,8 @@
         document.getElementById('save-vcard-btn').addEventListener('click', function() {
             // 1. Datos de Contacto
             const name = "Carlos José Villalón Muriel";
-            // Título para el archivo vCard
             const title = "Auditoría | Villalón Auditores"; 
-            const phone = "658201488"; // Sin espacios para el vCard
+            const phone = "658201488"; 
             const email = "carlos@villalonauditores.com";
             const url = "https://www.villalonauditores.com";
 
